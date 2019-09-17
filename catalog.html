@@ -11,8 +11,10 @@
 				<img class="header-logo" src="img/logo-technomart.svg" width="108" height="18"
 				alt="Логотип Техномарт">
 			</a>
-      <input class="header-search" type="search" name="search" placeholder="Поиск">
-			<a class="header-note" href="#">Закладки: <span class="header-note-num">0</span></a>
+      <form action="https://echo.htmlacademy.ru" method="GET">
+        <input class="header-search" type="search" name="search" placeholder="Поиск">
+      </form>
+      <a class="header-note" href="#">Закладки: <span class="header-note-num">0</span></a>
 			<a class="header-basket" href="#">Корзина: <span class="header-basket-num">10</span></a>
 			<a class="header-place-order" href="#">Оформить заказ</a>
 		</div>
@@ -66,23 +68,23 @@
           <legend>Производители:</legend>
           <ul>
             <li><label>
-              <input type="checkbox" name="Bosch" checked>
+              <input type="checkbox" name="bosch" checked>
               Bosch
             </label></li>
             <li><label>
-              <input type="checkbox" name="Интерскол">
+              <input type="checkbox" name="interskol">
               Интерскол
             </label></li>
             <li><label>
-              <input type="checkbox" name="Makita" checked>
+              <input type="checkbox" name="makita" checked>
               Makita
             </label></li>
             <li><label>
-              <input type="checkbox" name="Dewalt">
+              <input type="checkbox" name="dewalt">
               Dewalt
             </label></li>
             <li><label>
-              <input type="checkbox" name="Hitachi">
+              <input type="checkbox" name="hitachi">
               Hitachi
             </label></li>
           </ul>
@@ -324,7 +326,7 @@
 
   <section class="cart-popup">
     <h2 class="cart-title">Товар добавлен в корзину!</h2>
-    <a class="cart-place-order btn" href="#">Оформить заказ</a>
+    <a class="cart-place-order link" href="#">Оформить заказ</a>
     <button class="btn-continue" type="button">Продолжить покупки</button>
     <button class="btn-close" type="button">Закрыть</button>
   </section>
