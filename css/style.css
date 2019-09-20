@@ -1,0 +1,195 @@
+/* Глобальные стили */
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Стилизация header */
+
+.header {
+  background-color: #f3f7f8;
+}
+
+.header-head {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.header-logo-link {
+  background-color: #ee3643;
+}
+
+.header-logo-link:hover,
+.header-logo-link:focus {
+  background-color: #ca2c37;
+}
+
+.header-logo-link:active {
+  background-color: #ba2732;
+}
+
+/* ____Добавить белый цвет текста placeholder____ */
+.header-search {
+  font: inherit;
+  color: #000000;
+
+  background-color: inherit;
+  border: none;
+}
+
+.header-search:hover {
+  background-color: #212a3a;
+}
+
+.header-search:focus {
+  background-color: #ffffff;
+}
+
+.header-head a {
+  color: #ffffff;
+}
+
+.header-head a:active {
+  opacity: 0.4;
+}
+
+.header-note:hover,
+.header-basket:hover,
+.header-note:focus,
+.header-basket:focus {
+  background-color: #212a3a;
+}
+
+.header-note:active,
+.header-basket:active {
+  background-color: #161d29;
+}
+
+
+.header-place-order {
+  background-color: #63a63e;
+}
+
+.header-place-order:hover,
+.header-place-order:focus {
+  background-color: #5fbb2d;
+}
+
+.header-place-order:active {
+  opacity: 0.5;
+  background-color: #518534;
+}
+
+.header-desc {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  color: #ee3643;
+}
+
+.header-contacts {
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-align: center;
+  color: #32425c;
+}
+
+.header-contacts a {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: left;
+  color: #ee3643;
+
+  border: 3px solid #ffffff;
+}
+
+.header-list-btn {
+  list-style: none;
+}
+
+.header-btn {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.header-btn:hover,
+.header-btn:focus {
+  color: #ee3643;
+}
+
+.header-btn:active {
+  color: #000000;
+
+  opacity: 0.3;
+}
+
+.header-user-links {
+  list-style: none;
+}
+
+.header-user-links a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.header-user-links a:hover,
+.header-user-links a:focus {
+  color: #ee3643;
+}
+
+.header-user-links a:active {
+  color: #32425c;
+
+  opacity: 0.3;
+}
+
+.header-main-nav ul {
+  list-style: none;
+}
+
+.header-main-nav li {
+  background-color: #32425c;
+  box-shadow: inset 0 -5px #293449;
+}
+
+.header-main-nav a {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.header-main-nav li:hover,
+.header-main-nav li:focus {
+  background-color: #293449;
+  box-shadow: none;
+}
+
+.header-main-nav li:active {
+  background-color: #1d2739;
+  box-shadow: none;
+}
+/* ____Здесь неверно. Текст становиться полупрозрачным при нажатии на ссылку, а не на весь элемент */
+.header-main-nav a:active {
+  opacity: 0.5;
+}
