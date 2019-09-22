@@ -45,7 +45,7 @@ a {
   background-color: #ba2732;
 }
 
-/* ____Добавить белый цвет текста placeholder____ */
+/* ____Добавить белый цвет текста placeholder */
 .header-search {
   font: inherit;
   color: #000000;
@@ -56,6 +56,22 @@ a {
 
 .header-search:hover {
   background-color: #212a3a;
+}
+
+.header-search::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.header-search::-moz-placeholder {
+  color: #ffffff;
+}
+
+.header-search:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.header-search:-moz-placeholder {
+  color: #ffffff;
 }
 
 .header-search:focus {
@@ -171,30 +187,27 @@ a {
   list-style: none;
 }
 
-.header-main-nav li {
+.header-main-nav a {
+  display: block;
+
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+
   background-color: #32425c;
   box-shadow: inset 0 -5px #293449;
 }
 
-.header-main-nav a {
-  font-size: 17px;
-  line-height: 17px;
-  color: #ffffff;
-}
-
-.header-main-nav li:hover,
-.header-main-nav li:focus {
+.header-main-nav a:hover,
+.header-main-nav a:focus {
   background-color: #293449;
   box-shadow: none;
 }
 
-.header-main-nav li:active {
+.header-main-nav a:active {
+  color: rgba(255, 255, 255, 0.5);
   background-color: #1d2739;
   box-shadow: none;
-}
-/* ____Здесь неверно. Текст становиться полупрозрачным при нажатии на ссылку, а не на весь элемент */
-.header-main-nav a:active {
-  opacity: 0.5;
 }
 
 /* Стилизация main */
@@ -317,7 +330,7 @@ a {
 
 /* ___Стилизовать маркированый список */
 .delivery-company-list {
-  list-style: square;
+  list-style: none;
 }
 
 .delivery-company-list li {
