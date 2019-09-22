@@ -485,15 +485,15 @@ a {
   background-position: center center;
 }
 
-.footer-social li:nth-child(1) a {
+.social-vk {
   background-image: url("../img/icon-vk.svg");
 }
 
-.footer-social li:nth-child(2) a {
+.social-fb {
   background-image: url("../img/icon-fb.svg");
 }
 
-.footer-social li:nth-child(3) a {
+.social-insta {
   background-image: url("../img/icon-insta.svg");
 }
 
