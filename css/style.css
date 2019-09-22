@@ -218,6 +218,8 @@ a {
 }
 
 .catalog-item {
+  text-align: center;
+
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
 }
@@ -237,6 +239,65 @@ a {
 
 .catalog-item-model {
   text-transform: uppercase;
+}
+
+.catalog-item-image {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.btn-buy {
+  color: #ffffff;
+
+  background-color: #63a63e;
+  box-shadow: inset 0 -3px #367315;
+}
+
+.btn-buy:hover,
+.btn-buy:focus {
+  background-color: #5fbb2d;
+}
+
+.btn-buy:active {
+  background-color: #518534;
+  box-shadow: none;
+}
+
+.btn-add-note {
+  color: #32425c;
+
+  border: 3px solid #63a63e;
+}
+
+.btn-add-note:hover,
+.btn-add-note:focus {
+  border-color: #32425c;
+}
+
+.btn-add-note:active {
+  opacity: 0.3;
+}
+
+.catalog-item-price {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.price-old {
+  color: #999999;
+}
+
+.price-new {
+  color: #ffffff;
+
+  /* ___С таким фоном не будет видно svg*/
+  background-color: #ee3643;
+  background-image: url("../img/red-button.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
 }
 
 .delivery h2,
