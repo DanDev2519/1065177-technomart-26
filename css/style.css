@@ -277,6 +277,8 @@ a {
 }
 
 .catalog-item {
+  box-sizing: border-box;
+  width: 220px;
   text-align: center;
 
   background-color: #ffffff;
@@ -406,8 +408,20 @@ a {
 }
 
 /* Дополнительные стили для  main страницы каталога */
+.inner-page .header {
+  margin-bottom: 20px;
+}
+
+.inner-page main {
+  display: flex;
+  flex-direction: column;
+}
 
 .page-title {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  padding: 32px 28px 34px;
+
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
@@ -417,6 +431,10 @@ a {
 }
 
 .breadcrumbs {
+  order: -1;
+  margin: 0;
+  padding: 0;
+
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -429,7 +447,14 @@ a {
   color: inherit;
 }
 
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
 .filters {
+  width: 220px;
+
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
 }
@@ -473,11 +498,27 @@ a {
 }
 
 .catalog {
+  width: 700px;
+
   font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.catalog-list .catalog-item {
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.catalog-list .catalog-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 /* Стилизация footer */
