@@ -50,6 +50,9 @@ a {
 }
 
 .header-logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 220px;
   height: 42px;
 
@@ -64,11 +67,6 @@ a {
 
 .header-logo-link:active {
   background-color: #ba2732;
-}
-
-.header-logo {
-  display: block;
-  margin: 13px 57px 11px 55px;
 }
 
 /* ____Добавить белый цвет текста placeholder */
@@ -106,7 +104,11 @@ a {
 
 .header-note,
 .header-basket {
+  box-sizing: border-box;
   width: 150px;
+  padding-top: 12px;
+  padding-left: 50px;
+  padding-bottom: 12px;
 }
 
 .header-note:hover,
@@ -123,7 +125,11 @@ a {
 }
 
 .header-place-order {
+  box-sizing: border-box;
   width: 150px;
+  padding-top: 12px;
+  padding-left: 22px;
+  padding-bottom: 12px;
 
   background-color: #63a63e;
 }
@@ -221,20 +227,19 @@ a {
 }
 
 .header-main-nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-.header-main-nav li {
-  display: inline-block;
-  margin-right: -4px;
-}
-
 .header-main-nav a {
   display: block;
-  padding: 21px 34px 22px;
+  padding: 21px 33px 22px 34px;
 
   font-size: 17px;
   line-height: 17px;
@@ -372,7 +377,7 @@ a {
 }
 
 .contacts {
-  widows: 300px;
+  width: 300px;
   margin-bottom: 86px;
 }
 
@@ -412,11 +417,6 @@ a {
   margin-bottom: 20px;
 }
 
-.inner-page main {
-  display: flex;
-  flex-direction: column;
-}
-
 .page-title {
   margin-top: 25px;
   margin-bottom: 20px;
@@ -431,7 +431,6 @@ a {
 }
 
 .breadcrumbs {
-  order: -1;
   margin: 0;
   padding: 0;
 
