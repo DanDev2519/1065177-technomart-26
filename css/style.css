@@ -20,10 +20,7 @@ a {
 /* Стилизация header */
 
 .header {
-  display: flex;
-  flex-direction: column;
-
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 
   background-color: #f3f7f8;
 }
@@ -222,10 +219,6 @@ a {
   opacity: 0.3;
 }
 
-.header-footer {
-  margin-bottom: 60px;
-}
-
 .header-main-nav ul {
   display: flex;
   justify-content: center;
@@ -262,6 +255,10 @@ a {
 }
 
 /* Стилизация main */
+
+main {
+  padding-top: 60px;
+}
 
 .link {
   font-size: 14px;
@@ -413,8 +410,8 @@ a {
 }
 
 /* Дополнительные стили для  main страницы каталога */
-.inner-page .header {
-  margin-bottom: 20px;
+.inner-page main {
+  padding-top: 20px;
 }
 
 .page-title {
