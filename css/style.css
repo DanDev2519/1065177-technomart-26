@@ -704,19 +704,24 @@ main {
 }
 
 .page-title {
-  margin-top: 25px;
+  margin-top: 20px;
   margin-bottom: 20px;
-  padding: 32px 28px 34px;
+  padding: 30px 28px;
 
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
   color: #32425c;
+  text-transform: uppercase;
 
   background-color: #f2f6f8;
 }
 
 .breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
   margin: 0;
   padding: 0;
 
@@ -726,6 +731,51 @@ main {
   color: #000000;
 
   list-style: none;
+}
+
+.breadcrumbs li {
+  position: relative;
+
+  margin-right: 43px;
+
+  text-transform: uppercase;
+}
+
+.breadcrumbs li:first-child {
+  content: "";
+
+  top: 0;
+  right: 0;
+
+  width: 15px;
+  height: 12px;
+
+  background-image: url("../img/icon-home.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.breadcrumbs-current {
+  margin-right: 0;
+}
+
+.breadcrumbs-current::after {
+  display: none;
+}
+
+.breadcrumbs li::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: -25px;
+
+  width: 8px;
+  height: 12px;
+
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .breadcrumbs a {
@@ -745,6 +795,9 @@ main {
 }
 
 .filters h2 {
+  margin: 0;
+  padding: 10px 20px;
+
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
@@ -755,22 +808,42 @@ main {
 
 .filters fieldset {
   border: none;
+
+  margin: 0;
+  padding: 0;
 }
 
 .filters legend {
+  padding: 10px 0;
+
   font-size: 17px;
   line-height: 30px;
   font-weight: bold;
 }
 
 .filters ul {
+  padding: 0;
+  padding-top: 2px;
+  margin: 0;
+
   list-style: none;
 }
 
-.filter-manufacturer label,
-.filter-power label {
+.filter-option {
+  margin-bottom: 16px;
+  padding-left: 35px;
+}
+
+.filter-option label {
+  position: relative;
+
+  /* display: block; */
+
   font-size: 15px;
   line-height: 20px;
+
+  cursor: pointer;
+  user-select: none;
 }
 
 .btn-show {

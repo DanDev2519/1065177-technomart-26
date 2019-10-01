@@ -69,7 +69,7 @@
         <li><a href="#"><span class="visually-hidden">Главная</span></a></li>
         <li><a href="#">Каталог</a></li>
         <li><a href="#">Инструмент</a></li>
-        <li>Перфораторы</li>
+        <li class="breadcrumbs-current">Перфораторы</li>
       </ul>
       <h1 class="page-title">Перфораторы</h1>
       <div class="catalog-columns">
@@ -83,39 +83,53 @@
             <fieldset class="filter-manufacturer">
               <legend>Производители:</legend>
               <ul>
-                <li><label>
-                  <input type="checkbox" name="bosch" checked>
-                  Bosch
-                </label></li>
-                <li><label>
-                  <input type="checkbox" name="interskol">
-                  Интерскол
-                </label></li>
-                <li><label>
-                  <input type="checkbox" name="makita" checked>
-                  Makita
-                </label></li>
-                <li><label>
-                  <input type="checkbox" name="dewalt">
-                  Dewalt
-                </label></li>
-                <li><label>
-                  <input type="checkbox" name="hitachi">
-                  Hitachi
-                </label></li>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" checked>
+                    Bosch
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol">
+                    Интерскол
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" checked>
+                    Makita
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt">
+                    Dewalt
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi">
+                    Hitachi
+                  </label>
+                </li>
               </ul>
             </fieldset>
             <fieldset class="filter-power">
               <legend>Питание:</legend>
               <ul>
-                <li><label>
-                  <input type="radio" name="power" value="battery" checked>
-                  Аккумуляторное
-                </label></li>
-                <li><label>
-                  <input type="radio" name="power" value="network">
-                  Сетевое
-                </label></li>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power" value="battery" checked>
+                    Аккумуляторное
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power" value="network">
+                    Сетевое
+                  </label>
+                </li>
               </ul>
             </fieldset>
             <button class="btn-show" type="submit">Показать</button>
