@@ -616,7 +616,9 @@ main {
 }
 
 .catalog-item:hover .catalog-item-image {
-  padding-top: 1px;
+  /* padding-top: 1px; */
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog-item-image img {
@@ -652,7 +654,7 @@ main {
 .btn-buy {
   position: relative;
 
-  margin-top: 42px;
+  margin-top: 43px;
   color: #ffffff;
 
   background-color: #63a63e;
@@ -881,10 +883,16 @@ main {
 }
 
 .breadcrumbs li:first-child {
+  padding-right: 12px;
+}
+
+.breadcrumbs li:first-of-type a::before {
   content: "";
 
-  top: 0;
-  right: 0;
+  position: absolute;
+
+  top: 2px;
+  right: -2px;
 
   width: 15px;
   height: 12px;
@@ -906,7 +914,7 @@ main {
   content: "";
 
   position: absolute;
-  top: 0;
+  top: 2px;
   right: -25px;
 
   width: 8px;
