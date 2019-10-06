@@ -187,13 +187,15 @@
         <!-- Добавить сортировку-->
         <section class="catalog">
           <h2 class="visually-hidden">Список перфораторов</h2>
-          <article class="sort">
-            <h2>Сортировка</h2>
+          <div class="sort">
+            <p>Сортировка</p>
             <ul class="sort-list">
               <li class="sort-current">По цене</li>
-              <li>По типу</li>
-              <li>По функционалу</li>
-              <li>
+              <li class="sort-item">По типу</li>
+              <li class="sort-item">По функционалу</li>
+            </ul>
+            <ul class="sort-direction">
+              <li  class="sort-direction-current">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10">
                   <path fill="#231F20" d="M5.5 0L0 10h11z"/>
                 </svg>
@@ -204,7 +206,7 @@
                 </svg>
               </li>
             </ul>
-          </article>
+          </div>
           <ul class="catalog-list">
             <li class="catalog-item">
               <p class="flag-new"><span class="visually-hidden">новинка</span></p>
