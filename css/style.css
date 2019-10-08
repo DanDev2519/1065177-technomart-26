@@ -1313,13 +1313,13 @@ main {
 }
 
 .write-us-popup {
-  top: 120px;
+  top: 50%;
   left: 50%;
 
-  display: none;
+  /* display: none; */
 
   width: 620px;
-  margin-left: -310px;
+  transform: translate(-50%, -50%);
 
   border-top: 7px solid #ff5257;
   box-shadow: 0 20px 40px #000000;
@@ -1332,8 +1332,6 @@ main {
 
   width: 21px;
   height: 21px;
-
-  font-size: 0;
 
   background-color: transparent;
   background-image: url("../img/icon-close.svg");
@@ -1395,7 +1393,7 @@ main {
   width: 460px;
   padding: 8px 13px 12px;
 
-  resize: none;
+  /* resize: vertical; */
 }
 
 .write-block input:hover,
@@ -1406,6 +1404,7 @@ main {
 
 .write-block input:focus,
 .write-block textarea:focus {
+  outline: none;
   color: #999999;
   border: 2px solid #ee3643;
 }
@@ -1434,10 +1433,9 @@ main {
 
   width: 940px;
   height: 446px;
-  margin-top: -223px;
-  margin-left: -470px;
+  transform: translate(-50%, -50%);
 
-  box-shadow: 0 0 16px 2px rgba(47, 42, 43, 0.5);
+  box-shadow: 0 0 14.72px 1.28px rgba(47, 42, 43, 0.5);
 }
 
 .map-popup p {
@@ -1446,13 +1444,13 @@ main {
 }
 
 .cart-popup {
-  top: 120px;
+  top: 50%;
   left: 50%;
 
   display: none;
 
   width: 620px;
-  margin-left: -310px;
+  transform: translate(-50%, -50%);
 
   border-top: 7px solid #ff5257;
   box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
