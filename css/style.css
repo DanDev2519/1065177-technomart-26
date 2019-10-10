@@ -247,7 +247,7 @@ input[type="radio"].visually-hidden {
 .header-body {
   display: flex;
   margin-top: 46px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .header-desc {
@@ -538,7 +538,7 @@ main {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px -10px;
+  margin: 20px -10px 21px;
   padding: 0;
 
   list-style: none;
@@ -841,12 +841,12 @@ main {
 
 /* Дополнительные стили для  main страницы каталога */
 .inner-page main {
-  padding-top: 20px;
+  padding-top: 21px;
 }
 
 .page-title {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   padding: 30px 28px;
 
   font-size: 30px;
@@ -877,7 +877,7 @@ main {
 .breadcrumbs li {
   position: relative;
 
-  margin-right: 43px;
+  margin-right: 42px;
 
   text-transform: uppercase;
 }
@@ -959,6 +959,7 @@ main {
   border-bottom: 1px solid #e5e5e5;
 
   margin: 0;
+  margin-bottom: 5px;
   padding: 0;
 }
 
@@ -974,14 +975,99 @@ main {
   font-weight: bold;
 }
 
-/* .filter-price {
+.range-filter {
+  width: 220px;
+  margin-top: 4px;
+}
 
-} */
+.range-controls {
+  position: relative;
+
+  height: 41px;
+  margin-bottom: 9px;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  background-color: #f7f3ec;
+
+  border-radius: 3px;
+}
+
+.scale {
+  height: 2px;
+
+  background-color: #d7dcde;
+}
+
+.bar {
+  width: 152px;
+  height: 2px;
+
+  background-color: #00ca74;
+}
+
+.toggles {
+  position: absolute;
+  top: 30px;
+  left: 0;
+
+  width: 20px;
+  height: 23px;
+
+  background-image: url("../img/filter-button.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+}
+
+.toggle-min {
+  left: 20px;
+}
+
+.toggle-max {
+  left: 161px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+
+  height: 38px;
+  margin-bottom: 25px;
+}
+
+.price-controls label {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #444444;
+}
+
+.price-controls input {
+  width: 75px;
+  padding: 9px 9px 9px 13px;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 17px;
+  text-align: center;
+  color: #000000;
+
+  background-color: #f7f3ec;
+  border: none;
+  border-radius: 3px;
+}
+
+.max-price input {
+  margin-left: 8px;
+  padding: 9px 7px 9px 10px;
+}
 
 .filters ul {
   padding: 0;
   padding-top: 2px;
   margin: 0;
+  padding-bottom: 7px;
 
   list-style: none;
 }
@@ -1073,7 +1159,8 @@ main {
 }
 
 .btn-show {
-  padding: 10px 40px;
+  margin-top: 48px;
+  padding: 11px 39px;
   font-size: 13px;
   line-height: 13px;
   text-transform: uppercase;
@@ -1096,7 +1183,7 @@ main {
 .sort p {
   margin: 0;
   margin-right: 120px;
-  padding: 8px 20px 12px;
+  padding: 10px 20px 10px;
 
   border-radius: 3px;
 }
@@ -1124,7 +1211,7 @@ main {
 .sort-item a {
   display: block;
 
-  margin: 8px 3px;
+  margin: 10px 3px;
 
   color: rgba(0, 0, 0, 0.3);
 

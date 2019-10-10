@@ -79,6 +79,24 @@
             <fieldset class="filter-price">
               <legend>Цена:</legend>
               <!-- Добавить фильтры по цене-->
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggles toggle-min"></div>
+                  <div class="toggles toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    <input type="text" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                    –
+                    <input type="text" name="max-price" value="30000">
+                  </label>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="filter-manufacturer">
               <legend>Производители:</legend>
