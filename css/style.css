@@ -1015,9 +1015,11 @@ main {
   width: 20px;
   height: 23px;
 
+  background-color: transparent;
   background-image: url("../img/filter-button.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  border: none;
   cursor: pointer;
 }
 
