@@ -720,7 +720,6 @@ main {
   left: 26px;
   top: 115px;
 
-
   background-image: url("../img/icon-left.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -729,7 +728,6 @@ main {
 .control-item-2 {
   right: 19px;
   top: 115px;
-
 
   background-image: url("../img/icon-right.svg");
   background-repeat: no-repeat;
@@ -1049,12 +1047,10 @@ main {
 }
 
 .manufacturer-item {
-  margin: 20px 10px;
+  margin: 20px 10px 0;
 
   box-sizing: border-box;
   width: 220px;
-
-  text-align: center;
 
   background-color: #ffffff;
   border: 1px solid #eaeaea;
@@ -1074,18 +1070,216 @@ main {
   opacity: 0.3;
 }
 
-/* .manufacturer-item a {
+.manufacturer-item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 218px;
+  height: 143px;
+}
+
+.service {
+  margin-top: 85px;
+
+  background-color: #f5f8fa;
+}
+
+.service h2 {
+  margin: 0;
+  padding: 65px 0 26px;
+  width: 560px;
+
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.service p {
+  margin: 0;
+  padding: 0;
+  width: 560px;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.service-conteiner {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service-slider {
+  position: relative;
+
+  margin-top: 70px;
+  margin-bottom: 99px;
+}
+
+.service-slider::after {
+  content: "";
+
+  position: absolute;
+  top: -40px;
+  right: 0;
+
+  width: 10px;
+  height: 272px;
+
+  background-image: url("../img/shadow-left.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.service-control {
   display: block;
 
-  width: 100%;
-  height: 100%;
-} */
+  box-sizing: border-box;
+  width: 240px;
+  padding: 14px 23px 17px;
 
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
 
+  background-color: #32425c;
 
+  box-shadow:
+    inset 0 1px #405069,
+    0 1px #293449;
+}
 
+.service-control:hover,
+.service-control:focus {
+  background-color: #293449;
 
+  box-shadow:
+    inset 0 1px #405069,
+    0 1px #293449;
+}
 
+.service-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.service-item {
+  position: relative;
+  display: none;
+
+  margin-top: 67px;
+}
+
+.service-list .service-item:nth-child(1)::after {
+  content: "";
+
+  position: absolute;
+  top: 25px;
+  right: 0;
+
+  width: 468px;
+  height: 261px;
+
+  background-image: url("../img/lorry.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.service-list .service-item:nth-child(2)::after {
+  content: "";
+
+  position: absolute;
+  top: 3px;
+  right: -10px;
+
+  width: 389px;
+  height: 283px;
+
+  background-image: url("../img/guarantee.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.service-list .service-item:nth-child(3)::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: -10px;
+
+  width: 465px;
+  height: 285px;
+
+  background-image: url("../img/credit.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.service-item h3 {
+  margin: 0;
+
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.service-item p {
+  padding: 25px 245px 25px 0;
+  margin: 0;
+  width: 375px;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.service-item a {
+  display: block;
+
+  box-sizing: border-box;
+  width: 195px;
+  padding: 10px 42px 10px 45px;
+  margin: 0;
+  margin-top: 1px;
+
+  background-color: #ff5357;
+
+}
+
+#service-1:checked ~ .service-list .service-item:nth-child(1) {
+  display: block;
+}
+
+#service-2:checked ~ .service-list .service-item:nth-child(2) {
+  display: block;
+}
+
+#service-3:checked ~ .service-list .service-item:nth-child(3) {
+  display: block;
+}
+
+#service-1:checked ~ .service-slider .service-control-1,
+#service-2:checked ~ .service-slider .service-control-2,
+#service-3:checked ~ .service-slider .service-control-3 {
+  color: #32425c;
+
+  background-color: #ffffff;
+
+  box-shadow:
+    inset 0 1px #ffffff,
+    0 1px #ffffff;
+}
 
 .index-columns {
   display: flex;
