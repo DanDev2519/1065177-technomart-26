@@ -1809,8 +1809,9 @@ main {
   display: block;
 
   margin: 10px 5px;
-  padding: 9px 15px;
+  padding: 10px 15px;
 
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-align: center;
