@@ -2078,6 +2078,46 @@ main {
 
 /* Всплывающая форма */
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal {
   position: fixed;
 
@@ -2091,7 +2131,9 @@ main {
   display: none;
 
   width: 620px;
-  transform: translate(-50%, -50%);
+  margin-left: -310px;
+  margin-top: -215px;
+  /* transform: translate(-50%, -50%); */
 
   border-top: 7px solid #ff5257;
   box-shadow: 0 20px 40px #000000;
@@ -2101,6 +2143,7 @@ main {
   position: absolute;
   top: 10px;
   right: 10px;
+  z-index: 3;
 
   width: 21px;
   height: 21px;
@@ -2205,14 +2248,28 @@ main {
 
   width: 940px;
   height: 446px;
-  transform: translate(-50%, -50%);
+  margin-left: -470px;
+  margin-top: -223px;
+  /* transform: translate(-50%, -50%); */
 
   box-shadow: 0 0 14.72px 1.28px rgba(47, 42, 43, 0.5);
 }
 
 .map-popup p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
   margin: 0;
   padding: 0;
+}
+
+.map-popup iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
 }
 
 .cart-popup {
@@ -2222,7 +2279,9 @@ main {
   display: none;
 
   width: 620px;
-  transform: translate(-50%, -50%);
+  margin-left: -310px;
+  margin-top: -141px;
+  /* transform: translate(-50%, -50%); */
 
   border-top: 7px solid #ff5257;
   box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
@@ -2268,10 +2327,18 @@ main {
   border-radius: 3px;
 }
 
-
 .cart-popup .modal-bottom {
   padding: 38px 80px 37px 80px;
 
   background-color: #f1f1f1;
 }
 
+.modal-show {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
