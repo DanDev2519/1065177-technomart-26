@@ -1026,6 +1026,7 @@ main {
   margin-bottom: 20px;
   padding: 10px 30px;
 
+  font-weight: bold;
   color: #ffffff;
   background-color: #ee3643;
   border-radius: 3px;
@@ -1248,6 +1249,11 @@ main {
   color: #000000;
 }
 
+.service-item:first-child p {
+  padding: 25px 345px 25px 0;
+  width: 275px;
+}
+
 .service-item a {
   display: block;
 
@@ -1376,7 +1382,7 @@ main {
 .contacts .link {
   display: block;
 
-  padding-left: 64px;
+  padding-left: 47px;
   padding-top: 11px;
 }
 
@@ -1593,6 +1599,7 @@ main {
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
+  line-height: 18px;
   text-align: center;
   color: #000000;
 
@@ -1703,9 +1710,9 @@ main {
 
 .btn-show {
   margin-top: 48px;
-  padding: 11px 39px;
+  padding: 11px 39px 9px;
   font-size: 13px;
-  line-height: 13px;
+  line-height: 18px;
   text-transform: uppercase;
 
   border: 1px solid #e5e5e5;
@@ -1716,6 +1723,7 @@ main {
   display: flex;
   flex-wrap: wrap;
 
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1726,7 +1734,7 @@ main {
 .sort p {
   margin: 0;
   margin-right: 120px;
-  padding: 10px 20px 10px;
+  padding: 10px 19px 10px;
 
   border-radius: 3px;
 }
@@ -1743,12 +1751,16 @@ main {
 }
 
 .sort-list {
-  margin-right: 40px;
+  margin-right: 42px;
   width: 360px;
 }
 
 .sort-direction {
-  width: 50px;
+  width: 48px;
+}
+
+.sort-list li:nth-child(2) {
+  margin-left: 4px;
 }
 
 .sort-item a {
@@ -1776,7 +1788,7 @@ main {
 
 .sort-direction a {
   display: block;
-  margin: 8px 3px;
+  margin: 12px 2px;
 }
 
 .sort-direction path {
@@ -1898,7 +1910,11 @@ main {
 .footer-right a {
   font-size: 18px;
   line-height: 24px;
-  color: #ffffff;
+  color: #f3f7f9;
+}
+
+.footer-right a {
+  color: #f1f5f7;
 }
 
 .footer-contacts {
@@ -1951,6 +1967,10 @@ main {
 
 .footer-nav-material a {
   color: #ffd180;
+}
+
+.footer-nav-material li:nth-child(2) a {
+  color: #ffda96;
 }
 
 .footer-nav a:hover,
@@ -2119,6 +2139,7 @@ main {
 
 .modal {
   position: fixed;
+  z-index: 3;
 
   background-color: #ffffff;
 }
@@ -2142,7 +2163,7 @@ main {
   position: absolute;
   top: 10px;
   right: 10px;
-  z-index: 3;
+  z-index: 6;
 
   width: 21px;
   height: 21px;
@@ -2257,7 +2278,7 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 4;
 
   margin: 0;
   padding: 0;
@@ -2265,7 +2286,7 @@ main {
 
 .map-popup iframe {
   position: relative;
-  z-index: 2;
+  z-index: 5;
 
   border: none;
 }
@@ -2292,9 +2313,10 @@ main {
 
 .cart-popup h2 {
   margin: 0;
-  padding: 65px 90px 68px 160px;
+  padding: 65px 120px 68px 175px;
 
   font-size: 30px;
+  font-weight: 400;
   line-height: 30px;
   text-align: center;
 
