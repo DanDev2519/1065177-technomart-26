@@ -463,7 +463,7 @@ input[type="radio"].visually-hidden {
 
 .header-main-nav ul {
   display: flex;
-    /* justify-content: center; */
+  /* justify-content: center; */
   justify-content: space-evenly;
   flex-wrap: wrap;
 
@@ -478,7 +478,7 @@ input[type="radio"].visually-hidden {
 
 .header-main-nav a {
   display: block;
-    /* padding: 21px 33px 22px 34px; */
+  /* padding: 21px 33px 22px 34px; */
   padding-top: 21px;
   padding-right: 12px;
   padding-bottom: 22px;
@@ -1070,7 +1070,6 @@ main {
   box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 }
 
-
 .manufacturer-item:active {
   box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
 }
@@ -1108,7 +1107,7 @@ main {
 .service p {
   margin: 0;
   padding: 0;
-  width: 560px;
+  width: 400px;
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
@@ -1159,18 +1158,14 @@ main {
 
   background-color: #32425c;
 
-  box-shadow:
-    inset 0 1px #405069,
-    0 1px #293449;
+  box-shadow: inset 0 1px #405069, 0 1px #293449;
 }
 
 .service-control:hover,
 .service-control:focus {
   background-color: #293449;
 
-  box-shadow:
-    inset 0 1px #405069,
-    0 1px #293449;
+  box-shadow: inset 0 1px #405069, 0 1px #293449;
 }
 
 .service-list {
@@ -1263,7 +1258,6 @@ main {
   margin-top: 1px;
 
   background-color: #ff5357;
-
 }
 
 #service-1:checked ~ .service-list .service-item:nth-child(1) {
@@ -1285,9 +1279,7 @@ main {
 
   background-color: #ffffff;
 
-  box-shadow:
-    inset 0 1px #ffffff,
-    0 1px #ffffff;
+  box-shadow: inset 0 1px #ffffff, 0 1px #ffffff;
 }
 
 .index-columns {
@@ -1310,7 +1302,6 @@ main {
   margin: 0;
   margin-top: 80px;
 
-
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -1326,6 +1317,14 @@ main {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
+}
+
+.delivery p:nth-of-type(2) {
+  width: 400px;
+}
+
+.contacts p {
+  width: 200px;
 }
 
 .delivery-company-list {
@@ -2223,7 +2222,6 @@ main {
   color: #999999;
   border: 2px solid #ee3643;
 }
-
 
 .write-form .modal-bottom {
   padding: 37px 80px 36px 80px;
