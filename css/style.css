@@ -47,8 +47,6 @@ input[type="radio"].visually-hidden {
 }
 
 .header-head {
-  height: 42px;
-
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
@@ -1557,7 +1555,7 @@ main {
   padding-right: 12px;
 }
 
-.breadcrumbs li:first-of-type a::before {
+.breadcrumbs a:first-of-type::before {
   content: "";
 
   position: absolute;
@@ -1992,7 +1990,7 @@ main {
   border-color: #ee3643;
 }
 
-.pagination-item.pagination-item-current a {
+.pagination-item-current a {
   color: #ffffff;
 
   background-color: #ee3643;
