@@ -1,6 +1,6 @@
 # Личный проект «Техномарт»
 
-* Студент: [Данил Остряков](https://up.htmlacademy.ru/htmlcss/26/user/1065177).
+* Студент: [Данил](https://up.htmlacademy.ru/htmlcss/26/user/1065177).
 * Наставник: [Андрей Грачев](https://up.htmlacademy.ru/htmlcss/26/user/252055).
 
 ---
